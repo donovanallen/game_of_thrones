@@ -57,8 +57,9 @@ footer{
 
 .link{
   text-decoration: none;
+  color: currentColor;
 }
 
 .link:visited{
-  color:currentColor;
+  color: currentColor;
 }
