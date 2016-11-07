@@ -1,0 +1,12 @@
+<h2>Players</h2>
+<%= link_to "New Character", new_character_path %>
+<br>
+<% @characters.each do |character| %>
+<ul>
+  <li> <%= link_to character.name, character_path(character) %>
+    <%= link_to "(-)", character_path(character),
+        method: :delete,
+        data: {confirm: 'Are you sure?'},
+        class: "link" %> </li>
+</ul>
+<% end %>

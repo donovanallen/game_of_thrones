@@ -13,3 +13,52 @@
  *= require_tree .
  *= require_self
  */
+
+ * {
+   border: 1px solid red
+ }
+
+header{
+  text-align: center;
+}
+
+h1, h3, nav{
+  font-family: 'Cinzel', serif;
+}
+
+h1 {
+  font-weight: 600;
+  font-size: 50px;
+  margin-bottom: 0;
+}
+
+h3 {
+  color: crimson;
+  background-color: transparent;
+}
+
+html {
+  background-image: url(http://orig05.deviantart.net/defa/f/2011/310/e/6/game_of_thrones_inspiered_background_by_ivegotswagger-d4fa1dz.jpg);
+  font-family: 'Cinzel', serif;
+  text-align: center;
+  height: 100%;
+}
+
+body{
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+footer{
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.link{
+  text-decoration: none;
+}
+
+.link:visited{
+  color:currentColor;
+}

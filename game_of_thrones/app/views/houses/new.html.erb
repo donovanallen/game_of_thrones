@@ -1,0 +1,18 @@
+<h2>Add a new house</h2>
+
+<%= form_for @house do |f| %>
+<%= f.label :name %>
+<%= f.text_field :name %>
+<br>
+<%= f.label :banner %>
+<%= f.text_field :banner %>
+<br>
+<%= f.label :creed %>
+<%= f.text_field :creed %>
+<br>
+<%= f.submit %>
+<% end %>
+
+<footer>
+<%= link_to "Back to Houses", houses_path, class: "link" %>
+</footer>

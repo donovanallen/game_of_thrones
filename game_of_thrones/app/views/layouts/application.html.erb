@@ -6,9 +6,25 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
   </head>
 
   <body>
+    <header>
+
+      <h1>Game of Thrones</h1>
+      <h3>Don't die.</h3>
+
+      <nav>
+        <%= link_to "Home", root_path, class: "link" %> |
+        <%= link_to "Houses", houses_path, class: "link" %> |
+        <%= link_to "Characters", characters_path, class: "link" %>
+      </nav>
+      <hr>
+
+    </header>
+    <br>
+
     <%= yield %>
   </body>
 </html>

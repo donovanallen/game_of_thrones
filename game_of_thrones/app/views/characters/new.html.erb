@@ -1,0 +1,15 @@
+<h2>Add a new character</h2>
+
+<%= form_for @character do |f| %>
+<%= f.label :name %>
+<%= f.text_field :name %>
+<br>
+<%= f.label :age %>
+<%= f.text_field :age %>
+<br>
+<%= f.submit %>
+<% end %>
+
+<footer>
+<%= link_to "Back to Characters", characters_path, class: "link" %>
+</footer>
