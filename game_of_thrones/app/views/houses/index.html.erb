@@ -1,12 +1,12 @@
 <h2>Noble Houses</h2>
-<%= link_to "New House", new_house_path %>
+<%= link_to "Add New House", new_house_path, class: "link" %>
 <br>
 <% @houses.each do |house| %>
-<ul>
-  <li> <%= link_to house.name, house_path(house) %>
-    <%= link_to "(-)", house_path(house),
+
+  <%= link_to house.name, house_path(house), class: "link" %>
+  <%= link_to "(-)", house_path(house),
         method: :delete,
         data: {confirm: 'Are you sure?'},
-        class: "link" %> </li>
-</ul>
+        class: "link" %> <br>
+
 <% end %>

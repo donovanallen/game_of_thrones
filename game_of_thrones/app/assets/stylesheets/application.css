@@ -14,9 +14,9 @@
  *= require_self
  */
 
- * {
+ /** {
    border: 1px solid red
- }
+ }*/
 
 header{
   text-align: center;
@@ -62,4 +62,8 @@ footer{
 
 .link:visited{
   color: currentColor;
+}
+
+li{
+  list-style: none;
 }
